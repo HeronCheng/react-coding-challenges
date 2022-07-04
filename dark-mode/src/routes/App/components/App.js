@@ -21,7 +21,7 @@ function App() {
         {/* --The button that should toggle dark mode-- */}
         <button className="app__dark-mode-btn icon level-right" onClick={switchMode}>
           {
-            dark? <FontAwesomeIcon icon={faSun} color="#FFA500"/>:<FontAwesomeIcon icon={faMoon}/>         
+            isdark? <FontAwesomeIcon icon={faSun} color="#FFA500"/>:<FontAwesomeIcon icon={faMoon}/>         
           }
         </button>
 
