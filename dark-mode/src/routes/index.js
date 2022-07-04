@@ -1,5 +1,10 @@
 import App from './App';
 import React, {useState} from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 export const AuthContext = React.createContext();
 
@@ -12,7 +17,11 @@ const Home=()=>{
                     dark : [ dark, setDark ],
                 }}
             >
-                <App/>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<App />} />
+            </Routes>
+        </BrowserRouter>
         </AuthContext.Provider>
     )
 }
